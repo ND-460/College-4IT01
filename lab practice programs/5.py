@@ -7,10 +7,8 @@ menu = {
     "Butter Naan": 50,
     "Paneer Roll": 180
 }
-
 search_word = "paneer"
 search_word = search_word.lower()
-
 for dish in menu:
     if search_word in dish.lower():
         print(dish)
