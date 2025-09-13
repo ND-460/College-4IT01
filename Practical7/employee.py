@@ -1,3 +1,4 @@
+print("By 22IT460")
 class Employee:
     def __init__(self, emp_id, name, salary):
         self.emp_id = emp_id
@@ -27,6 +28,6 @@ class Salary(Employee):
         print(f"TDS (10%): ₹{self.tds:.2f}")
         print(f"80C Investment (5%): ₹{self.section_80C:.2f}")
         print(f"Net Salary: ₹{self.net_salary:.2f}")
-emp1 = Salary(101, "Amit Kumar", 50000)
+emp1 = Salary(101, "Neel", 50000)
 emp1.calculateSalary()
 emp1.display_salary_slip()
