@@ -1,0 +1,26 @@
+print("By 22IT460")
+import numpy as np
+import matplotlib.pyplot as plt
+arr1 = np.random.randn(1000)
+mean_val = np.mean(arr1)
+median_val = np.median(arr1)
+std_dev = np.std(arr1)
+print(f"Mean: {mean_val:.4f}")
+print(f"Median: {median_val:.4f}")
+print(f"Standard Deviation: {std_dev:.4f}")
+
+plt.plot(arr1, label="Random Data", alpha=0.8)
+plt.title("Line Plot of Random Data")
+plt.xlabel("Index")
+plt.ylabel("Value")
+plt.legend()
+plt.show()
+
+plt.hist(arr1, bins=30, edgecolor='black', alpha=0.7)
+plt.title("Histogram of Random Data")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.axvline(mean_val, color='red', linestyle='dashed', linewidth=2, label=f"Mean = {mean_val:.2f}")
+plt.axvline(median_val, color='green', linestyle='dotted', linewidth=2, label=f"Median = {median_val:.2f}")
+plt.legend()
+plt.show()
